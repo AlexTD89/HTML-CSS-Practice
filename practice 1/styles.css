@@ -1,0 +1,147 @@
+h1, p {
+  text-align: center;
+}
+
+h1{
+margin-top: 2em;
+margin-bottom: 0.5em;
+font-weight: 400;
+font-size: 2rem;
+}
+
+p{
+font-style: italic;
+margin-top: -5px;
+margin-bottom: 40;
+font-size: 1.3rem;
+font-weight: 200;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+body{
+  width: 100%;
+  height: 100vh;   
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+form {
+max-width: 600px;
+min-width: 300px;
+margin: 0 auto;
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgba(27, 27, 50, 0.8);
+background-image: none;
+background-origin: padding-box;
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-size: auto;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+box-sizing: border-box;
+color: rgb(243, 243, 243);
+display: block;
+font-size: 16px;
+font-weight: 400;
+/* height: 1420px; */
+line-height: 22.4px;
+margin-top: 0px;
+padding-bottom: 40px;
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 40p x;
+width: 720px;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+}
+
+label, input{
+  display: block;
+}
+
+input{
+  height: 2.1rem;
+  border-radius: 0.25em;
+  border: 1px solid #ced4da
+}
+
+select{
+display: block;
+width: 100%;
+height: 2.1rem;
+margin: 10px 10px 10px 10px;
+padding: 0.375rem 0.75rem;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+box-sizing: border-box;
+appearance: auto;
+}
+
+.addSpace{
+  margin-top: 20px;
+}
+
+.placeHolderTextFormat{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-indent: 10px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.input-radio{
+  display: inline-block;
+  /* width: 100%; */
+}
+
+
+textarea,
+select,
+.long-inputField{
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  width: 10px;
+  height: 1.5em;
+  margin: 10px 10px 0 0;
+  margin-right: 0.7rem;
+  min-width: 1.25rem;
+}
+
+textarea{
+border-radius: 0.25em;
+border: 1px solid #ced4da;
+}
+
+#submit{
+  width: 100%;
+  background-color: #37af65;
+  color: #f3f3f3;
+  border-radius: 0.25em;
+  border: 0;
+  height: 2.5rem;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}

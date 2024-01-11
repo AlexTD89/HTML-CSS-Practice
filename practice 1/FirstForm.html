@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+  <header>
+    <h1 id="title"> freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+  
+<form id="survey-form" method="post">
+  <!-- Name, email, number -->
+  <fieldset>
+    <label id="name-label" for="name"> Name
+      <input id="name" name="name" type="text" class="long-inputField placeHolderTextFormat" required placeholder="Enter your name">
+    <label>
+    <label id="email-label" for="email" class="addSpace">Email
+      <input id="email" name="email" type="email" placeholder="Enter your email" class="long-inputField placeHolderTextFormat" required>
+    </label>
+    <label id="number-label" for="number" class="addSpace">Enter your number
+      <input id="number" name="number" type="number" placeholder="number" min="13" max="120" class="long-inputField placeHolderTextFormat" required>
+    <label>
+</fieldset>
+      <!-- Dropdown-->
+<fieldset>
+    <label for="dropdown">Dropdown
+      <select id="dropdown">
+        <option value="">Select one</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </select>
+    </label>
+</fieldset>
+    <!-- Radio buttons -->
+<fieldset>
+    <label>Select one radio option:</label>
+    <label>
+      <input type="radio" class="input-radio" name="radio" value="Radio 1">Radio 1
+      </label>
+      <label>
+      <input type="radio" class="input-radio" name="radio" value="Radio 2">Radio 2
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label>Select one check box:</label>
+    <label>
+      <input type="checkbox" class="input-radio" name="checkbox" value="check 1">Check1
+    </label>
+    <label>
+      <input type="checkbox" class="input-radio" name="checkbox" value="check 2">Check 2
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label>Additional Comments:</label>
+    <label for="text-area">
+      <textarea id="text-area" name="text-area" placeholder="Enter your comment here" rows="5" class="placeHolderTextFormat"></textarea>
+    </label>
+  </fieldset>
+  
+  <button id="submit">Submit</button>
+</form>
+</body>
+</html>

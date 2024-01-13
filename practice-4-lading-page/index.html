@@ -11,14 +11,17 @@
 <body>
   <main>
     <header id="header">
-      <img id="header-img" href="logo.com"/>
+      <img id="header-img" src="http//www.logo.com"/>
       <nav id="nav-bar">
         <ul>
+          <li>
+            <a class="nav-link" href="#email-section">Menu-1</a>
+          </li>
           <li>
             <a class="nav-link" href="#section1">Menu-1</a>
           </li>
           <li>
-            <a class="nav-link" href="#section2">Menu-2</a>
+            <a class="nav-link" href="#video-section">Menu-2</a>
           </li>
           <li>
             <a class="nav-link" href="#section3">Menu-3</a>
@@ -26,6 +29,22 @@
         </ul>
       </nav>
     </header>
+
+    <div class="container">
+      <section id="email-section">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h2></h2>
+          <input id="email" name="email" type="email" placeholder="email" required>
+          <input id="submit" type="submit" value="Get Started" class="btn">
+        </form>
+      </section>
+      <section id="section1"></section>
+      <section id="video-section">
+        <iframe id="video" src="youtube.com"></iframe>
+      </section>
+      <section id="section3"></section>
+    </div>
+
   </main>
 </body>
 

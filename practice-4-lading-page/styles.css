@@ -6,13 +6,13 @@
 }
 
 html {
-  /* font-size: 62.5%; */
+  font-size: 100%;
 }
 
 body {
   font-family: 'Baskervville', serif;
   color: black;
-  background: white;
+  background: linen;
   /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 20%, black 80%); */
 }
 
@@ -31,8 +31,11 @@ header{
   align-items: center;
   min-height: 75px;
   padding: 0px 20px;
-  width: auto;
+  width: 100%;
   top:0;
+  left:0;
+  /* background-color: linen; */
+  background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 20%, black 80%);
 }
 
 nav{
@@ -40,11 +43,13 @@ nav{
 }
 
 nav > ul {
-  width: 50vw;
+  /* width: 50vw; */
   display: flex;
   flex-direction: row;
-  align-items: center;
-  text-align: center;
+  align-items: end;
+  margin-right: 60px;
+  padding: 0;
+  /* left:0; */
 }
 
 li {
@@ -54,7 +59,8 @@ li {
 a {
   text-decoration: none;
   padding: 10px; 
-  color: black; 
+  color: white; 
+  font-family: 'Motiva Sans', sans-serif;
 }
 
 .logo{
@@ -64,7 +70,7 @@ a {
 #steamdeck-logo{
   width: 25%;
   height: 25%;
-  max-width: 300px;
+  max-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,15 +99,9 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 900px){
-  
+@media (max-width: 560px) {
+  nav > ul {
+    flex-direction: column;
+    font-size: 90%
+  }
 }

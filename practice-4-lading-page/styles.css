@@ -43,13 +43,14 @@ nav{
 }
 
 nav > ul {
-  /* width: 50vw; */
+  width: 45vw;
   display: flex;
   flex-direction: row;
   align-items: end;
-  /* margin-right: 60px; */
   padding: 0;
-  /* left:0; */
+  max-width: 550px;;
+  min-width: 330px;
+  justify-content: space-around;
 }
 
 li {
@@ -96,7 +97,6 @@ a {
   margin-bottom: 200px;
 }
 
-
 .menu-toggle {
   display: none;
   cursor: pointer;
@@ -113,7 +113,6 @@ a {
     font-size: 90%
   }
 
-  /* Hide the regular navigation menu */
   #nav-bar ul {
     display: none;
   }
@@ -125,9 +124,9 @@ a {
   #nav-bar ul.show {
     display: flex;
     flex-direction: row;
-    background-color: #333; /* Set the background color for the mobile menu */
+    background-color: #333;
     position: absolute;
-    top: 60px; /* Adjust as needed */
+    top: 60px;
     left: 0;
     width: 100%;
     padding: 10px;

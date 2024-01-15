@@ -1,7 +1,6 @@
 *,
 ::before,
 ::after {
-  /* margin: 0; */
   box-sizing: border-box;
 }
 
@@ -12,7 +11,7 @@ html {
 body {
   font-family: 'Baskervville', serif;
   color: black;
-  background: linen;
+  background: white;
   /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 20%, black 80%); */
 }
 
@@ -34,8 +33,9 @@ header{
   width: 100%;
   top:0;
   left:0;
-  /* background-color: linen; */
-  background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 20%, black 80%);
+  background-color: #171d25;
+  color: grey;
+  /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 20%, black 80%); */
 }
 
 nav{
@@ -47,7 +47,7 @@ nav > ul {
   display: flex;
   flex-direction: row;
   align-items: end;
-  margin-right: 60px;
+  /* margin-right: 60px; */
   padding: 0;
   /* left:0; */
 }
@@ -59,7 +59,7 @@ li {
 a {
   text-decoration: none;
   padding: 10px; 
-  color: white; 
+  color: rgba(225,225,227,255); 
   font-family: 'Motiva Sans', sans-serif;
 }
 
@@ -71,6 +71,7 @@ a {
   width: 25%;
   height: 25%;
   max-width: 200px;
+  min-width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,12 +97,51 @@ a {
 }
 
 
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
 
+.menu-toggle i {
+  font-size: 24px;
+}
 
 
 @media (max-width: 560px) {
   nav > ul {
     flex-direction: column;
     font-size: 90%
+  }
+
+  /* Hide the regular navigation menu */
+  #nav-bar ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-bar ul.show {
+    display: flex;
+    flex-direction: row;
+    background-color: #333; /* Set the background color for the mobile menu */
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  #nav-bar ul.show li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  header{
+    min-height: 60px;
   }
 }

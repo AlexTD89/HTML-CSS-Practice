@@ -8,31 +8,39 @@
   <link rel="stylesheet" href="./styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-  <link href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare" rel="stylesheet" type="text/css">
+  <link
+    href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare"
+    rel="stylesheet" type="text/css">
 </head>
+
+<header id="header">
+  <img id="steamdeck-logo" class="logo" src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/sd_logo_gradient_animated.png" >
+  <nav id="nav-bar">
+    <!-- Hamburger menu toggle button -->
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul>
+      <li>
+        <a class="nav-link" href="#email-section">Menu-1</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#section1">Menu-1</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#video-section">Menu-2</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#section3">Menu-3</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
 <body>
   <main>
     <!-- <video width="100%" height="auto" autoplay="" playsinline="" poster="https://clan.cloudflare.steamstatic.com/images/39049601/7c3f59d1942b7d6cc7c59ab3674e1130e1b26789.jpg?origin=https://store.steampowered.com/" loop=""><source src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.mp4?origin=https://store.steampowered.com/" type="video/mp4"><source src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.webm?origin=https://store.steampowered.com/" type="video/webm"></video> -->
-    <header id="header">
-      <img id="steamdeck-logo" class="logo" src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/sd_logo_gradient_animated.png" >
-      <nav id="nav-bar">
-        <ul>
-          <li>
-            <a class="nav-link" href="#email-section">Menu-1</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#section1">Menu-1</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#video-section">Menu-2</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#section3">Menu-3</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+
 
     <div class="container">
 
@@ -58,3 +66,16 @@
 </body>
 
 </html>
+
+<scripts>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('#nav-bar ul');
+
+  menuToggle.addEventListener('click', function () {
+    navMenu.classList.toggle('show');
+  });
+});
+  </script>
+</scripts>

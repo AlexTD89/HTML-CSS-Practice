@@ -12,7 +12,7 @@ body {
   font-family: 'Baskervville', serif;
   color: black;
   background: white;
-  /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 20%, black 80%); */
+  /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 30%, black 68%); */
 }
 
 h1 {
@@ -26,16 +26,16 @@ h2, h3, h4, h5, h6 {
 header{
   position: fixed;
   display: flex;
-  justify-content: space-between;
+justify-content: space-between;
   align-items: center;
   min-height: 75px;
   padding: 0px 20px;
   width: 100%;
   top:0;
   left:0;
-  background-color: #171d25;
+background-color: #171d25;
   color: grey;
-  /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 20%, black 80%); */
+  z-index: 3;
 }
 
 nav{
@@ -106,6 +106,32 @@ a {
   font-size: 24px;
 }
 
+#gif-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#gif-video{
+  margin-top: 67px;
+  width: 95%;
+  max-width: 1200px;
+  height: auto;
+}
+
+#gif-text-section{
+  position: absolute;
+  top: 30%;
+  color: white;
+  bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 1em;
+  z-index: 1;
+}
 
 @media (max-width: 560px) {
   nav > ul {
@@ -130,7 +156,7 @@ a {
     left: 0;
     width: 100%;
     padding: 10px;
-    z-index: 1;
+    z-index: 3;
     justify-content: space-around;
     margin-top: 0;
   }

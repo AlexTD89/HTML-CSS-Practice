@@ -1,96 +1,115 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Steam Deck Landing Page</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-  <link
-    href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare"
-    rel="stylesheet" type="text/css">
-</head>
-
-<header id="header">
-  <img id="steamdeck-logo" class="logo" src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/sd_logo_gradient_animated.png" >
-  <nav id="nav-bar">
-    <!-- Hamburger menu toggle button -->
-    <div class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-    <ul>
-      <li>
-        <a class="nav-link" href="#email-section">Menu-1</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#section1">Menu-1</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#video-section">Menu-2</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#section3">Menu-3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<body>
-  <main>
-    <section id="gif-section">
-      <div id="gif-text-section">
-        <h1>THRILL & ADVENTURE</h1>
-        <h2>A new way to play handheld</h2>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Steam Deck Landing Page</title>
+      <link rel="stylesheet" href="./styles.css" />
+      <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+      <link
+         href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare"
+         rel="stylesheet" type="text/css">
+   </head>
+   <header id="header">
+      <img id="steamdeck-logo" class="logo" src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/sd_logo_gradient_animated.png" >
+      <nav id="nav-bar">
+         <!-- Hamburger menu toggle button -->
+         <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+         </div>
+         <ul>
+            <li>
+               <a class="nav-link" href="#gif-section">Thrill</a>
+            </li>
+            <li>
+               <a class="nav-link" href="#about">About</a>
+            </li>
+            <li>
+               <a class="nav-link" href="#video-section">Trailer</a>
+            </li>
+            <li>
+               <a class="nav-link" href="#section3">Menu-3</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <body>
+      <main>
+         <div id="main-container" class="container">
+            <section id="gif-section">
+               <div id="gif-text-section">
+                  <h1>THRILL & ADVENTURE</h1>
+                  <h2>A new way to play handheld</h2>
+               </div>
+               <video id="gif-video" autoplay="" playsinline=""
+                  poster="https://clan.cloudflare.steamstatic.com/images/39049601/7c3f59d1942b7d6cc7c59ab3674e1130e1b26789.jpg?origin=https://store.steampowered.com/"
+                  loop="">
+                  <source
+                     src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.mp4?origin=https://store.steampowered.com/"
+                     type="video/mp4">
+                  <source
+                     src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.webm?origin=https://store.steampowered.com/"
+                     type="video/webm">
+               </video>
+            </section>
+            <section id="about">
+               <div>
+                  <h1 id="about-h1">The Steam Deck</h1>
+               </div>
+               <div id="adbout-columns">
+                  <p class="about-p"><span class="first-word">OLED</span> is a refreshed version of the original Steam Deck,
+                     featuring a larger OLED display designed for gaming.
+                     It offers a vibrant HDR OLED display, runs many Steam games well, has excellent controls and improved
+                     haptics, and better battery life.
+                  </p>
+                  <p class="about-p"><span class="first-word">The OLED</span> display is designed for gaming with striking
+                     contrast, brilliant clarity, and a larger picture, providing brighter colors, blacker blacks, and amazing
+                     motion rendition. 
+                  </p>
+                  <p class="about-p"><span class="first-word">The device</span> also offers better
+                     battery life and faster WiFi compared to the original Steam Deck. It is available in limited quantities in
+                     the U.S. and Canada as the Steam Deck OLED Limited Edition. 
+                  </p>
+                  <p class="about-p">
+                     <span class="first-word">Steam Deck</span> with LCD is the original version and is a great entry point for
+                     portable PC gaming, balancing power, ergonomics, and battery life.
+                  </p>
+               </div>
+            </section>
+            <section id="video-section">
+               <h1 id="video-section-text">Introduced by Valve:<br> The new handheld OLED experience</h1>
+               <iframe id="video" src="https://www.youtube.com/embed/_vTsZMvjJ-A?si=mSjfKpjfLzBKueBA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+               </iframe>
+            </section>
+            <section id="email-section">
+               <form id="form" action="https://www.freecodecamp.com/email-submit">
+                  <h2></h2>
+                  <input id="email" name="email" type="email" placeholder="email" required>
+                  <input id="submit" type="submit" value="Get Started" class="btn">
+               </form>
+            </section>
+      </main>
+      <footer>
+      <div class="container" style="background-color: grey;">
+      <p>FOOTER</p>
       </div>
-      <video id="gif-video" autoplay="" playsinline=""
-        poster="https://clan.cloudflare.steamstatic.com/images/39049601/7c3f59d1942b7d6cc7c59ab3674e1130e1b26789.jpg?origin=https://store.steampowered.com/"
-        loop="">
-        <source
-          src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.mp4?origin=https://store.steampowered.com/"
-          type="video/mp4">
-        <source
-          src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.webm?origin=https://store.steampowered.com/"
-          type="video/webm">
-      </video>
-    </section>
-
-
-    <div class="container">
-
-      <section id="email-section">
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <h2></h2>
-          <input id="email" name="email" type="email" placeholder="email" required>
-          <input id="submit" type="submit" value="Get Started" class="btn">
-        </form>
-      </section>
-      <section id="section1"></section>
-      <section id="video-section">
-        <iframe height="" id="video" width="560" height="615"
-          src="https://www.youtube.com/embed/_vTsZMvjJ-A?si=mSjfKpjfLzBKueBA" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </section>
-      <section id="section3"></section>
-    </div>
-
-  </main>
-</body>
-
+      </footer>
+      </div>
+   </body>
 </html>
-
 <scripts>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('#nav-bar ul');
-
-  menuToggle.addEventListener('click', function () {
-    navMenu.classList.toggle('show');
-  });
-});
-  </script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('#nav-bar ul');
+      
+      menuToggle.addEventListener('click', function () {
+      navMenu.classList.toggle('show');
+      });
+      });
+   </script>
 </scripts>

@@ -1,73 +1,62 @@
-*,
-::before,
-::after {
+*, ::before, ::after {
   box-sizing: border-box;
 }
-
 html {
   font-size: 100%;
 }
-
 body {
   font-family: 'Baskervville', serif;
   color: black;
   background: white;
-  /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 30%, black 68%); */
+ /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 30%, black 68%);
+  */
 }
-
 h1 {
   font-family: 'Anton', sans-serif;
 }
-
 h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
 }
-
 header{
   position: fixed;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   min-height: 75px;
   padding: 0px 20px;
   width: 100%;
   top:0;
   left:0;
-background-color: #171d25;
+  background-color: #171d25;
   color: grey;
   z-index: 3;
 }
-
 nav{
   display: block;
 }
-
 nav > ul {
   width: 45vw;
   display: flex;
   flex-direction: row;
   align-items: end;
   padding: 0;
-  max-width: 550px;;
+  max-width: 550px;
+ ;
   min-width: 330px;
   justify-content: space-around;
 }
-
 li {
   display: inline-block;
 }
-
 a {
   text-decoration: none;
-  padding: 10px; 
-  color: rgba(225,225,227,255); 
+  padding: 10px;
+  color: rgba(225,225,227,255);
   font-family: 'Motiva Sans', sans-serif;
 }
-
 .logo{
   width: 30vw;
 }
-
 #steamdeck-logo{
   width: 25%;
   height: 25%;
@@ -79,13 +68,11 @@ a {
   text-align: center;
   margin-left: 10px;
 }
-
 .container{
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
-
 #email-section{
   display: flex;
   flex-direction: column;
@@ -96,77 +83,70 @@ a {
   margin-top: 100px;
   margin-bottom: 200px;
 }
-
 .menu-toggle {
   display: none;
   cursor: pointer;
 }
-
 .menu-toggle i {
   font-size: 24px;
 }
-
 #gif-section{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
 }
-
 #gif-video{
   margin-top: 67px;
-  width: 95%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1100px;
+  min-width: 800px;
   height: auto;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
-
 #gif-text-section{
   position: absolute;
   top: 30%;
-  color: white;
   bottom: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
+  color: white;
+  text-align: center;
   gap: 1em;
   z-index: 1;
 }
-
 @media (max-width: 560px) {
   nav > ul {
-    flex-direction: column;
-    font-size: 90%
-  }
-
+      flex-direction: column;
+      font-size: 90% 
+ }
   #nav-bar ul {
-    display: none;
-  }
-
+      display: none;
+ }
   .menu-toggle {
-    display: block;
-  }
-
+      display: block;
+ }
   #nav-bar ul.show {
-    display: flex;
-    flex-direction: row;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    z-index: 3;
-    justify-content: space-around;
-    margin-top: 0;
-  }
-
+      display: flex;
+      flex-direction: row;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      z-index: 3;
+      justify-content: space-around;
+      margin-top: 0;
+ }
   #nav-bar ul.show li {
-    padding: 10px 0;
-    text-align: center;
-  }
-
+      padding: 10px 0;
+      text-align: center;
+ }
   header{
-    min-height: 60px;
-  }
+      min-height: 60px;
+ }
+  #gif-video{
+      margin-top: 47px;
+ }
 }

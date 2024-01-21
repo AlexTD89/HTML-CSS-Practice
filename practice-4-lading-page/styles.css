@@ -6,6 +6,7 @@
   --menu-link-color: rgba(225,225,227,255);
   --better-black: #1B2838;
   --blue-text: rgb(26, 159, 255);
+  --footer-color: #ddd;
 }
 *, ::before, ::after {
   box-sizing: border-box;
@@ -75,7 +76,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 .container{
   width: 100%;
@@ -189,6 +190,7 @@ a {
 #prices > h1{
   margin-top: 2em;
   margin-bottom:0;
+  margin-left: 30px;
 }
 .price-card{
   margin: 2rem 1.9rem;
@@ -262,6 +264,30 @@ ul{
   font-size: 1.2rem;
   border-radius: 2em;
 }
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+footer > .container{
+  text-align: end;
+  max-width: 1200px;
+  margin:0;
+  background-color: var(--footer-color);
+  padding: 10px;
+}
+.container > p {
+  font-family: "Lato";
+  margin: 0 5px;
+}
+#extra-links{
+  display:flex;
+  flex-direction: row-reverse;
+}
+#extra-links > p{
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
 @media (max-width: 930px){
   .cards{
       flex-wrap: wrap;
@@ -274,6 +300,9 @@ ul{
  }
   #prices > h1{
       text-align: center;
+ }
+  #prices > h1{
+      margin-left: 0;
  }
 }
 @media (max-width: 560px) {

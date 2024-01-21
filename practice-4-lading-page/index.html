@@ -1,175 +1,181 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Steam Deck Landing Page</title>
-      <link rel="stylesheet" href="./styles.css" />
-      <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-      <link
-         href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare"
-         rel="stylesheet" type="text/css">
-   </head>
-   <header id="header">
-      <img id="steamdeck-logo" class="logo" src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/sd_logo_gradient_animated.png" >
-      <nav id="nav-bar">
-         <!-- Hamburger menu toggle button -->
-         <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-         </div>
-         <ul>
-            <li>
-               <a class="nav-link" href="#gif-section">Thrill</a>
-            </li>
-            <li>
-               <a class="nav-link" href="#about">About</a>
-            </li>
-            <li>
-               <a class="nav-link" href="#video-section">Trailer</a>
-            </li>
-            <li>
-               <a class="nav-link" href="#prices">Prices</a>
-            </li>
-            <li>
-               <a class="nav-link" href="#email">Email</a>
-            </li>
-         </ul>
-      </nav>
-   </header>
-   <body>
-      <main>
-         <div id="main-container" class="container">
-            <section id="gif-section">
-               <div id="gif-text-section">
-                  <h1>THRILL & ADVENTURE</h1>
-                  <h2>A new way to play handheld</h2>
-               </div>
-               <video id="gif-video" autoplay="" playsinline=""
-                  poster="https://clan.cloudflare.steamstatic.com/images/39049601/7c3f59d1942b7d6cc7c59ab3674e1130e1b26789.jpg?origin=https://store.steampowered.com/"
-                  loop="">
-                  <source
-                     src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.mp4?origin=https://store.steampowered.com/"
-                     type="video/mp4">
-                  <source
-                     src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.webm?origin=https://store.steampowered.com/"
-                     type="video/webm">
-               </video>
-            </section>
-            <section id="about">
-               <div>
-                  <h1 id="about-h1">The Steam Deck</h1>
-               </div>
-               <div id="about-columns">
-                  <p class="about-p"><span class="first-word">OLED</span> is a refreshed version of the original Steam
-                     Deck,
-                     featuring a larger OLED display designed for gaming.
-                     It offers a vibrant HDR OLED display, runs many Steam games well, has excellent controls and improved
-                     haptics, and better battery life.
-                  </p>
-                  <p class="about-p"><span class="first-word">The OLED</span> display is designed for gaming with striking
-                     contrast, brilliant clarity, and a larger picture, providing brighter colors, blacker blacks, and
-                     amazing
-                     motion rendition.
-                  </p>
-                  <p class="about-p"><span class="first-word">The device</span> also offers better
-                     battery life and faster WiFi compared to the original Steam Deck. It is available in limited
-                     quantities in
-                     the U.S. and Canada as the Steam Deck OLED Limited Edition.
-                  </p>
-                  <p class="about-p">
-                     <span class="first-word">Steam Deck</span> with LCD is the original version and is a great entry point
-                     for
-                     portable PC gaming, balancing power, ergonomics, and battery life.
-                  </p>
-               </div>
-            </section>
-            <section id="video-section">
-               <h1 id="video-section-text">Introduced by Valve:<br> The new handheld OLED experience</h1>
-               <iframe id="video" src="https://www.youtube.com/embed/_vTsZMvjJ-A?si=mSjfKpjfLzBKueBA"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen>
-               </iframe>
-            </section>
-            <section id="prices">
-               <h1>Pick your option</h1>
-               <div class="cards">
-                  <div id="lcd" class="price-card">
-                     <div class="card-header">
-                        <h3><span class="blue-text">LCD</span> 256GB</h3>
-                     </div>
-                     <h4>$399.00</h4>
-                     <ul>
-                        <li>LCD touch screen</li>
-                        <li>7" diagonal screen size</li>
-                        <li>Up to 60Hz refresh rate</li>
-                        <li>1280 x 800 optically bonded LCD display</li>
-                        <li>256GB NVME SSD</li>
-                        <li>Wi-Fi 5</li>
-                        <li>40Whr battery; 2-8 hours of gameplay</li>
-                        <li>Carrying case</li>
-                     </ul>
-                     <button type="submit" class="buy-btn">get it now</button>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Steam Deck Landing Page</title>
+   <link rel="stylesheet" href="./styles.css" />
+   <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+   <link
+      href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare"
+      rel="stylesheet" type="text/css">
+</head>
+<header id="header">
+   <img id="header-img" class="logo" src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/sd_logo_gradient_animated.png" >
+   <nav id="nav-bar">
+      <!-- Hamburger menu toggle button -->
+      <div class="menu-toggle">
+         <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+         <li>
+            <a class="nav-link" href="#gif-section">Thrill</a>
+         </li>
+         <li>
+            <a class="nav-link" href="#about">About</a>
+         </li>
+         <li>
+            <a class="nav-link" href="#video-section">Trailer</a>
+         </li>
+         <li>
+            <a class="nav-link" href="#prices">Prices</a>
+         </li>
+         <li>
+            <a class="nav-link" href="#email">Email</a>
+         </li>
+      </ul>
+   </nav>
+</header>
+
+<body>
+   <main>
+      <div id="main-container" class="container">
+         <section id="gif-section">
+            <div id="gif-text-section">
+               <h1>THRILL & ADVENTURE</h1>
+               <h2>A new way to play handheld</h2>
+            </div>
+            <video id="gif-video" autoplay="" playsinline=""
+               poster="https://clan.cloudflare.steamstatic.com/images/39049601/7c3f59d1942b7d6cc7c59ab3674e1130e1b26789.jpg?origin=https://store.steampowered.com/"
+               loop="">
+               <source
+                  src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.mp4?origin=https://store.steampowered.com/"
+                  type="video/mp4">
+               <source
+                  src="https://cdn.cloudflare.steamstatic.com/store/promo/steamdeck/video/sd_header_750.webm?origin=https://store.steampowered.com/"
+                  type="video/webm">
+            </video>
+         </section>
+         <section id="about">
+            <div>
+               <h1 id="about-h1">The Steam Deck</h1>
+            </div>
+            <div id="about-columns">
+               <p class="about-p"><span class="first-word">OLED</span> is a refreshed version of the original Steam
+                  Deck,
+                  featuring a larger OLED display designed for gaming.
+                  It offers a vibrant HDR OLED display, runs many Steam games well, has excellent controls and improved
+                  haptics, and better battery life.
+               </p>
+               <p class="about-p"><span class="first-word">The OLED</span> display is designed for gaming with striking
+                  contrast, brilliant clarity, and a larger picture, providing brighter colors, blacker blacks, and
+                  amazing
+                  motion rendition.
+               </p>
+               <p class="about-p"><span class="first-word">The device</span> also offers better
+                  battery life and faster WiFi compared to the original Steam Deck. It is available in limited
+                  quantities in
+                  the U.S. and Canada as the Steam Deck OLED Limited Edition.
+               </p>
+               <p class="about-p">
+                  <span class="first-word">Steam Deck</span> with LCD is the original version and is a great entry point
+                  for
+                  portable PC gaming, balancing power, ergonomics, and battery life.
+               </p>
+            </div>
+         </section>
+         <section id="video-section">
+            <h1 id="video-section-text">Introduced by Valve:<br> The new handheld OLED experience</h1>
+            <iframe id="video" src="https://www.youtube.com/embed/_vTsZMvjJ-A?si=mSjfKpjfLzBKueBA"
+               title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               allowfullscreen>
+            </iframe>
+         </section>
+         <section id="prices">
+            <h1>Pick your option</h1>
+            <div class="cards">
+               <div id="lcd" class="price-card">
+                  <div class="card-header">
+                     <h3><span class="blue-text">LCD</span> 256GB</h3>
                   </div>
-                  <div id="oled-512" class="price-card">
-                     <div class="card-header">
-                        <h3><span class="orange-text">OLED</span> 512GB</h3>
-                     </div>
-                     <h4>$549.00</h4>
-                     <ul>
-                        <li>OLED touch screen</li>
-                        <li>7" diagonal screen size</li>
-                        <li>Up to 90Hz refresh rate</li>
-                        <li>1280 x 800 HDR OLED display</li>
-                        <li>512GB NVME SSD</li>
-                        <li>Wi-Fi 6E</li>
-                        <li>50Whr battery; 3-12 hours of gameplay</li>
-                        <li>Carrying case</li>
-                     </ul>
-                     <button type="submit" class="buy-btn">get it now</button>
-                  </div>
-                  <div id="oled-1t" class="price-card">
-                     <div class="card-header">
-                        <h3><span class="orange-text">OLED</span> 1TB</h3>
-                     </div>
-                     <h4>$649.00</h4>
-                     <ul>
-                        <li>OLED touch screen</li>
-                        <li>7" diagonal screen size</li>
-                        <li>Up to 90Hz refresh rate</li>
-                        <li>1280 x 800 HDR OLED display</li>
-                        <li>1TB NVME SSD</li>
-                        <li>Wi-Fi 6E</li>
-                        <li>50Whr battery; 3-12 hours of gameplay</li>
-                        <li>Carrying case</li>
-                     </ul>
-                     <button type="submit" class="buy-btn">get it now</button>
-                  </div>
+                  <h4>$399.00</h4>
+                  <ul>
+                     <li>LCD touch screen</li>
+                     <li>7" diagonal screen size</li>
+                     <li>Up to 60Hz refresh rate</li>
+                     <li>1280 x 800 optically bonded LCD display</li>
+                     <li>256GB NVME SSD</li>
+                     <li>Wi-Fi 5</li>
+                     <li>40Whr battery; 2-8 hours of gameplay</li>
+                     <li>Carrying case</li>
+                  </ul>
+                  <button type="submit" class="buy-btn">get it now</button>
                </div>
-            </section>
-            <section id="email">
-               <form id="form" action="https://www.freecodecamp.com/email-submit">
-                  <h2>If you want to subscribe to our news letters about Steam Deck, please leave us your email address
-                  </h2>
-                  <input id="email-inputfield" name="email" type="email" placeholder="your email address" required>
-                  <br>
-                  <input id="submit" type="submit" value="Subscribe" class="btn">
-               </form>
-            </section>
-      </main>
-      <footer>
+               <div id="oled-512" class="price-card">
+                  <div class="card-header">
+                     <h3><span class="orange-text">OLED</span> 512GB</h3>
+                  </div>
+                  <h4>$549.00</h4>
+                  <ul>
+                     <li>OLED touch screen</li>
+                     <li>7" diagonal screen size</li>
+                     <li>Up to 90Hz refresh rate</li>
+                     <li>1280 x 800 HDR OLED display</li>
+                     <li>512GB NVME SSD</li>
+                     <li>Wi-Fi 6E</li>
+                     <li>50Whr battery; 3-12 hours of gameplay</li>
+                     <li>Carrying case</li>
+                  </ul>
+                  <button type="submit" class="buy-btn">get it now</button>
+               </div>
+               <div id="oled-1t" class="price-card">
+                  <div class="card-header">
+                     <h3><span class="orange-text">OLED</span> 1TB</h3>
+                  </div>
+                  <h4>$649.00</h4>
+                  <ul>
+                     <li>OLED touch screen</li>
+                     <li>7" diagonal screen size</li>
+                     <li>Up to 90Hz refresh rate</li>
+                     <li>1280 x 800 HDR OLED display</li>
+                     <li>1TB NVME SSD</li>
+                     <li>Wi-Fi 6E</li>
+                     <li>50Whr battery; 3-12 hours of gameplay</li>
+                     <li>Carrying case</li>
+                  </ul>
+                  <button type="submit" class="buy-btn">get it now</button>
+               </div>
+            </div>
+            <div id="section-deck-image">
+               <img id="deck-img" src="https://clan.cloudflare.steamstatic.com/images//39049601/e54b85b6e75bc7ec589372474ef1705b3471bb66.png">
+            </div>
+         </section>
+         <section id="email-section-main" name="email">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+               <h2>If you want to subscribe to our news letters about Steam Deck, please leave us your email address
+               </h2>
+               <input id="email" name="email" type="email" placeholder="your email address" required>
+               <br>
+               <input id="submit" type="submit" value="Subscribe" class="btn">
+            </form>
+         </section>
+   </main>
+   <footer>
       <div class="container">
-      <div id="extra-links">
-      <p>Privacy</p>
-      <p>Terms</p>
-      <p>Contact</p>
+         <div id="extra-links">
+            <p>Privacy</p>
+            <p>Terms</p>
+            <p>Contact</p>
+         </div>
+         <p>Copyright 2023, Original Steam Deck Fan Landing Page</p>
       </div>
-      <p>Copyright 2023, Original Steam Deck Fan Landing Page</p>
-      </div>
-      </footer>
-      </div>
-   </body>
+   </footer>
+   </div>
+</body>
+
 </html>
 <scripts>
    <script>

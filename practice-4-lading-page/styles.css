@@ -67,7 +67,7 @@ a {
 .logo{
   width: 30vw;
 }
-#steamdeck-logo{
+#header-img{
   width: 25%;
   height: 25%;
   max-width: 200px;
@@ -87,16 +87,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-#email-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 200px;
-  margin-top: 100px;
-  margin-bottom: 200px;
 }
 .menu-toggle {
   display: none;
@@ -241,16 +231,23 @@ ul{
   border: none;
   border-radius: 2em;
 }
-#email{
+#section-deck-image{
+ display: flex;
+ justify-content: center;
+}
+#deck-img{
+ max-width: 800px;
+}
+#email-section-main{
   margin-top: 50px;
   text-align: center;
 }
-#email-inputfield{
+#email{
   width: 250px;
   height: 25px;
   margin-top: 10px;
 }
-#email-inputfield::placeholder {
+#email::placeholder {
   font-size: 14px;
   text-align: center;
 }
@@ -265,28 +262,28 @@ ul{
   border-radius: 2em;
 }
 footer{
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+ display: flex;
+ justify-content: center;
+ margin-top: 50px;
 }
 footer > .container{
-  text-align: end;
-  max-width: 1200px;
-  margin:0;
-  background-color: var(--footer-color);
-  padding: 10px;
+ text-align: end;
+ max-width: 1200px;
+ margin:0;
+ background-color: var(--footer-color);
+ padding: 10px;
 }
 .container > p {
-  font-family: "Lato";
-  margin: 0 5px;
+ font-family: "Lato";
+ margin: 0 5px;
 }
 #extra-links{
-  display:flex;
-  flex-direction: row-reverse;
+ display:flex;
+ flex-direction: row-reverse;
 }
 #extra-links > p{
-  margin: 0 10px;
-  margin-bottom: 10px;
+ margin: 0 10px;
+ margin-bottom: 10px;
 }
 @media (max-width: 930px){
   .cards{
@@ -301,8 +298,11 @@ footer > .container{
   #prices > h1{
       text-align: center;
  }
-  #prices > h1{
-      margin-left: 0;
+ #prices > h1{
+  margin-left: 0;
+ }
+ #deck-img{
+ max-width: 600px;
  }
 }
 @media (max-width: 560px) {
@@ -350,5 +350,8 @@ footer > .container{
  }
   #gif-text-section>h1{
       font-size: 1.8rem;
+ }
+ #deck-img{
+ max-width: 400px;
  }
 }

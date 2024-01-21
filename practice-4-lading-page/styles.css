@@ -17,8 +17,6 @@ body {
   font-family: 'Baskervville', serif;
   color: black;
   background: white;
- /* background: radial-gradient(ellipse at center, rgb(249, 56, 34) 10%, red 30%, black 68%);
-  */
 }
 h1 {
   font-family: "Motiva Sans", Sans-serif;
@@ -116,7 +114,7 @@ a {
   margin-top: 67px;
   width: 100%;
   max-width: 1200px;
-  min-width: 800px;
+  min-width: 500px;
   height: auto;
   object-fit: contain;
   overflow-clip-margin: content-box;
@@ -320,5 +318,8 @@ ul{
  }
   .first-word {
       font-size: 1.5rem;
+ }
+  #gif-text-section>h1{
+      font-size: 1.8rem;
  }
 }

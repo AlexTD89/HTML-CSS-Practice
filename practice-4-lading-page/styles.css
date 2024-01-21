@@ -135,7 +135,7 @@ a {
   background: var(--background-grey);
   margin-top: 1rem;
 }
-#adbout-columns{
+#about-columns{
   display: grid;
   grid-template-columns: minmax(1rem, 1fr) minmax(1rem, 1fr) ;
   row-gap: 3rem;
@@ -181,12 +181,16 @@ a {
 }
 .cards{
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   min-width: 300px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+#prices > h1{
+  margin-top: 2em;
+  margin-bottom:0;
 }
 .price-card{
   margin: 2rem 1.9rem;
@@ -209,6 +213,7 @@ a {
 }
 .price-card > h4{
   font-size: 1.5em;
+  margin-bottom: 15px;
 }
 .blue-text{
   color: var(--blue-text);
@@ -226,24 +231,27 @@ ul{
   margin: 5px;
   font-family: "Motiva Sans";
 }
-
 .buy-btn{
- text-transform: uppercase;
- margin: 20px;
- width: 150px;
- height: 40px;
- color: white;
- background-color: var(--orange-red);
- border: none;
- border-radius: 2em;
+  text-transform: uppercase;
+  margin: 20px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: var(--orange-red);
+  border: none;
+  border-radius: 2em;
 }
-
 @media (max-width: 930px){
- .cards{
-     flex-wrap: wrap;
+  .cards{
+      flex-wrap: wrap;
+ }
+  #about-columns {
+      font-size: 1.4rem;
+ }
+  .first-word {
+      font-size: 2rem;
  }
 }
-
 @media (max-width: 560px) {
   nav > ul {
       flex-direction: column;
@@ -280,5 +288,11 @@ ul{
  }
   .cards{
       flex-direction: column;
+ }
+  #about-columns {
+      font-size: 1.2rem;
+ }
+  .first-word {
+      font-size: 1.5rem;
  }
 }

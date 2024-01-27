@@ -22,8 +22,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 20px;
-  max-height: 40px;
+  height: 60px;
   padding: 30px;
   background-color: var(--light-gray);
   display: flex;
@@ -32,12 +31,17 @@ header {
   align-items: center;
 }
 
+#nav-title{
+  margin-left: 4%;
+}
+
 #navbar > ul{
   width: 400px;
   max-width: 500px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-right: 4%;
 }
 
 li {

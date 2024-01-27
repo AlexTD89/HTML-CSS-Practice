@@ -1,20 +1,37 @@
-:root{
-    --light-gray: lightgray;
-  }
-  
-  #navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: var(--light-gray);
-  }
-  
-  #welcome-section{
-    height: 100vh;
-    margin-top: 10%;
-  }
-  
-  
-  @media(max-width:550px){
-  
-  }
+:root {
+  --light-gray: lightgray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 100%;
+}
+
+body{
+  margin: 0;
+}
+
+header {
+  display:flex;
+  flex-direction: row;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--light-gray);
+  display: block;
+}
+
+#welcome-section {
+  height: 100vh;
+  margin-top: 10%;
+}
+
+@media (max-width: 550px) {
+}

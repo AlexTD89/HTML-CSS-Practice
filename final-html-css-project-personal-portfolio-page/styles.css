@@ -54,9 +54,19 @@ a {
   font-family: 'Motiva Sans', sans-serif;
 }
 
-#welcome-section {
+#welcome {
   height: 100vh;
-  margin-top: 10%;
+  margin-top: 60px;
+  background-color: aquamarine;
+}
+
+#projects{
+  background-color: yellow;
+  height: 200px;
+}
+#contact{
+  background-color: orange;
+  height: 200px;
 }
 
 @media (max-width: 550px) {

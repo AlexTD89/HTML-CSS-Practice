@@ -66,22 +66,13 @@ body {
 }
 
 /* welcome section */
-#welcome {
+#welcome-section {
   height: 100vh;
   margin: 0;
   margin-top: 80px;
   background-color: var(--welcome-section-color);
   display: flex;
   justify-content: center;
-}
-
-#projects {
-  background-color: var(--projects-section-color);
-  height: 200px;
-}
-#contact {
-  background-color: var(--contact-section-color);
-  height: 200px;
 }
 
 .section-content-container {
@@ -103,6 +94,84 @@ body {
   font-style: italic;
   color: var(--brown-text);
   margin-top: 0px;
+}
+
+/* projects section */
+#projects {
+  background-color: var(--projects-section-color);
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects h2 {
+  margin: 40px 0 40px 0;
+}
+
+.all-project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  justify-content: space-around;
+  /* width: 80%; */
+  /* height: 300px; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.github-logo-1,
+.github-logo-2 {
+  width: 100px;
+}
+
+.github-logo-3,
+.github-logo-4 {
+  width: 180px;
+}
+
+.github-logo-3 {
+  border-radius: 5% 5% 0 0;
+  overflow: hidden;
+}
+
+.github-logo-4 {
+  position: relative;
+  border-radius: 0 0 5% 5%;
+  clip: rect(200px, 200px, 150px, 200px);
+  top: -40px;
+  margin-bottom: -40px;
+}
+
+.card span {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.card p {
+  text-align: center;
+  color: var(--grey-text);
+  font-weight: bold;
+  font-size: large;
+}
+
+/* contact section */
+#contact {
+  background-color: var(--contact-section-color);
+  height: 200px;
 }
 
 @media (max-width: 550px) {

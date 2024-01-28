@@ -1,25 +1,25 @@
 :root {
   --light-gray: lightgray;
-  --light-peach: #f0e9e7;
-  --sopa-blue: #79abc9;
+  --sopa-blue: #7cafcf;
   --grey-text: #243f50;
-  --nav-font-family: "Avenir-Roman",sans-serif;
+  --brown-text: #845939;
+  --welcome-section-color: #f0e9e7;
+  --projects-section-color: #a3c8e0;
+  --contact-section-color: #647c8c;
+  --nav-font-family: "Avenir-Roman", sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  font-family: var(--nav-font-family);
 }
 
-html{
+html {
   font-size: 100%;
 }
 
-body{
+body {
   margin: 0;
-}
-
-header {
-
 }
 
 /* nav-bar section */
@@ -27,60 +27,82 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   padding: 30px;
   background-color: var(--sopa-blue);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
-#nav-title{
+#nav-title {
   margin-left: 4%;
-  font-family: var(--nav-font-family);
   color: var(--grey-text);
   font-weight: bold;
-  font-size: 20px;;
+  font-size: 25px;
 }
 
-#navbar > ul{
+#navbar > ul {
   width: 400px;
   max-width: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-right: 4%;
+  margin-right: 10px;
 }
 
 #navbar li {
   display: inline-block;
-  
 }
 
 #nav-menu-list > li > a {
   text-decoration: none;
   padding: 10px;
-  font-family: var(--nav-font-family);
   color: var(--grey-text);
   font-weight: bold;
-  font-size: 1.3rem;;
+  font-size: 1.4rem;
 }
 
 /* welcome section */
 #welcome {
   height: 100vh;
-  margin-top: 60px;
-  background-color: var(--light-peach);
+  margin: 0;
+  margin-top: 80px;
+  background-color: var(--welcome-section-color);
+  display: flex;
+  justify-content: center;
 }
 
-#projects{
-  background-color: yellow;
+#projects {
+  background-color: var(--projects-section-color);
   height: 200px;
 }
-#contact{
-  background-color: orange;
+#contact {
+  background-color: var(--contact-section-color);
   height: 200px;
+}
+
+.section-content-container {
+  width: 90%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+
+.section-content-container h1 {
+  font-size: 3rem;
+  color: var(--grey-text);
+  margin-bottom: 20px;
+}
+
+.section-content-container p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--brown-text);
+  margin-top: 0px;
 }
 
 @media (max-width: 550px) {

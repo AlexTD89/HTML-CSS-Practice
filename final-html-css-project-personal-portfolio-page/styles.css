@@ -208,6 +208,10 @@ body {
   background-color: var(--grey-charcoal);
 }
 
+.project-tile:hover{
+  border: 2px solid var(--grey-text);
+}
+
 /* contact section */
 #contact {
   background-color: var(--contact-section-color);

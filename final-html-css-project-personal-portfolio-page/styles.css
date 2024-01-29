@@ -6,6 +6,9 @@
   --welcome-section-color: #f0e9e7;
   --projects-section-color: #a3c8e0;
   --contact-section-color: #647c8c;
+  --pink-color: #fe5456;
+  --light-green: #b6cfaf;
+  --grey-charcoal: #75828f;
   --nav-font-family: "Avenir-Roman", sans-serif;
 }
 
@@ -152,12 +155,6 @@ body {
   width: 200px;
 }
 
-.github-logo-5 {
-  width: 290px;
-  height: 75%;
-  border-radius: 5%;
-}
-
 .github-logo-3 {
   border-radius: 5% 5% 0 0;
 }
@@ -168,6 +165,14 @@ body {
   clip: rect(200px, 200px, 150px, 200px);
   top: -40px;
   margin-bottom: -40px;
+}
+
+.github-logo-5 {
+  height: calc(100% - 6.5rem);
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 10px;
 }
 
 .project-tile p {
@@ -191,8 +196,16 @@ body {
   color: var(--welcome-section-color);
 }
 
-#migrantmirror-card{
-  background-color: #b6cfaf;
+#migrantmirror-card {
+  background-color: var(--light-green);
+}
+
+#steamdeck-card{
+  background-color: var(--pink-color);
+}
+
+#techdoc-card{
+  background-color: var(--grey-charcoal);
 }
 
 /* contact section */

@@ -66,6 +66,13 @@ body {
   color: var(--grey-text);
   font-weight: bold;
   font-size: 1.4rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, color 0.3s ease; /* transition for both border and color */
+}
+
+#nav-menu-list > li > a:hover {
+  border-bottom: 2px solid var(--brown-text);
+  color: var(--brown-text);
 }
 
 /* welcome section */
@@ -102,7 +109,7 @@ body {
 /* projects section */
 #projects {
   background-color: var(--projects-section-color);
-  height: 1000px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +117,7 @@ body {
 }
 
 #projects h2 {
-  margin: 40px 0 40px 0;
+  margin: 60px 0 0 0;
   font-size: 2rem;
   color: var(--grey-text);
 }
@@ -121,8 +128,7 @@ body {
   grid-gap: 3rem;
   width: 100%;
   max-width: 1200px;
-  margin: 50px auto;
-  justify-content: space-around;
+  margin: 100px auto;
 }
 
 .project-tile {
@@ -135,6 +141,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 5%;
+  justify-self: center;
 }
 
 .contain-multiple-logos {
@@ -209,7 +216,7 @@ body {
 }
 
 .project-tile:hover{
-  border: 2px solid var(--grey-text);
+  border: 3px solid var(--contact-section-color);
 }
 
 /* contact section */

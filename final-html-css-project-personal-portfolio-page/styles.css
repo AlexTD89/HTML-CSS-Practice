@@ -114,12 +114,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 #projects h2 {
-  margin: 60px 0 0 0;
+  margin: auto;
+  margin-top: 40px;
   font-size: 2rem;
   color: var(--grey-text);
+  text-align: center;
 }
 
 .all-project-container {
@@ -128,7 +131,7 @@ body {
   grid-gap: 3rem;
   width: 100%;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .project-tile {
